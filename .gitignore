@@ -1,0 +1,10 @@
+# Ignore everything
+/*
+
+# But not these files...
+!/docs
+!.gitignore
+!README.md
+!LICENSE
+!mkdocs.yml
+!tweaked_theme
