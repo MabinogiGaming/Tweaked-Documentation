@@ -52,8 +52,6 @@ The full syntax for an action is : `tweak.<action>(<arguments);`, e.g :
 tweak.recipes.remove("recipeName");
 ```
 
-`Hint : tweak can be ommitted in order to save time, starting lines with . instead`
-
 `Variables` can be used to store `Arguments`, allowing them to be used in `Methods`, e.g :
 
 `Variables` have the syntax `$<variable name> = <variable type>(<arguments>);
@@ -63,6 +61,14 @@ tweak.recipes.remove("recipeName");
 $testVar = String("recipeName");
 tweak.recipes.remove($testVar);
 ```
+
+!!! note
+
+	tweak can be written as either `tweak.`, `tweaked.` or simply `.`, all have the same effect.
+	
+!!! note
+
+	Actions and Variables are case insensitive, `addrecipe`, `addRecipe` and `AddRecipe` all work the same.
 
 <br>
 

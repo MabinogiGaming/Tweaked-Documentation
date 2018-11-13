@@ -2,6 +2,7 @@ pages:
     - Home: 'index.md'
     - Getting Started: 'started.md'
     - Base Actions:
+      - dict: 'actions/dict.md'
       - lang: 'actions/lang.md'
       - loot: 'actions/loot.md'
       - recipes: 'actions/recipes.md'
@@ -46,8 +47,18 @@ site_name: Tweaked Documentation
 site_url: 'https://mabinogigaming.github.io/Tweaked/'
 site_author: Mabinogi
 
+markdown_extensions:
+    - admonition
+    - smarty
+    - sane_lists
+    - pymdownx.superfences
+    - pymdownx.highlight:
+        use_pygments: false
+    - toc:
+        permalink: ' '
+
 extra:
   logo: 'img/favicon.ico'
   history_buttons: false
   article_nav_top: false
-  version: '0.3.0'
+  version: '0.3.1'
