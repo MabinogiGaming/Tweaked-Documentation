@@ -7,6 +7,7 @@ pages:
       - lang: 'actions/lang.md'
       - loot: 'actions/loot.md'
       - recipes: 'actions/recipes.md'
+      - seeds: 'actions/seeds.md'
     - Mod Actions:
       - Immersive Engineering:
         - ie: 'actions/ie/ie.md'
@@ -35,6 +36,7 @@ pages:
       - hand: 'commands/hand.md'
       - loot: 'commands/loot.md'
       - recipes: 'commands/recipes.md'
+      - seeds: 'commands/seeds.md'
     - Glossary:
       - Enchantments: 'glossary/enchantments.md'
       - Loot Tables: 'glossary/loottables.md'
@@ -62,4 +64,4 @@ extra:
   logo: 'img/favicon.ico'
   history_buttons: false
   article_nav_top: false
-  version: '0.3.2'
+  version: '0.3.3'

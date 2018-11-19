@@ -1,4 +1,4 @@
-#loot
+#anvil
 
 Tweaks involving changing of anvil recipes and behaviour.
 
