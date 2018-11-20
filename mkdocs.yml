@@ -45,6 +45,7 @@ pages:
 theme: 
     name: null
     custom_dir: tweaked_theme
+    theme_dir: tweaked_theme
 
 site_name: Tweaked Documentation
 site_url: 'https://mabinogigaming.github.io/Tweaked/'
@@ -54,7 +55,6 @@ markdown_extensions:
     - admonition
     - smarty
     - sane_lists
-    - pymdownx.superfences
     - pymdownx.highlight:
         use_pygments: false
     - toc:
