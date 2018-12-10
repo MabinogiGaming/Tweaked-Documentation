@@ -69,4 +69,4 @@ extra:
   logo: 'img/favicon.ico'
   history_buttons: false
   article_nav_top: false
-  version: '0.3.4'
+  version: '0.3.5'

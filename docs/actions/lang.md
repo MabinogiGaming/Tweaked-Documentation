@@ -2,12 +2,22 @@
 
 Tweaks involving language files and translations.
 
-## setName
+<br>
 
-*tweak.lang.setName([stack](/arguments/stack/) stack, [string](/arguments/string/) name)*  
+---
 
-Sets the translated name for the provided item/block, overriding the normal name.
-```python
-#change the name of diamond to tweaked
-tweak.lang.setName(<minecraft:diamond>, "tweaked");
-```
+## set
+
+**tweak.lang.set([string](/arguments/string/) string, [string](/arguments/string/) name)**  
+**tweak.lang.set([stack](/arguments/stack/) stack, [string](/arguments/string/) name)**
+
+Sets the translated name for the provided string/item/block, overriding the normal one.
+
+!!!example
+	```python
+	#change the name of a villager
+	tweak.lang.setName("entity.Villager.fisherman", "Fish Master");
+
+	#change the name of diamond to tweaked
+	tweak.lang.setName(<minecraft:diamond>, "tweaked");
+	```
