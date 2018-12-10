@@ -16,8 +16,8 @@ Minecraft/Forge uses loot tables to determine what items are dropped by entities
 
 Loot tables are identified by a string pointing to that tables location, for instance :  
 
-* "entities/zombie" : determines the loot dropped by zombies.  
-* "chests/village_blacksmith" : determines the loot generated in blacksmith chests.  
+* "minecraft:entities/zombie" : determines the loot dropped by zombies.  
+* "minecraft:chests/village_blacksmith" : determines the loot generated in blacksmith chests.  
 
 For a full list of loot tables take a look in the [glossary](/glossary/loottables/).
 
@@ -69,7 +69,7 @@ Clears all loot pools from loot table, essentially removing all loot.
 !!! example
 	```python
 	#remove all loot drops from pigs
-	tweak.loot.clear("entity/pig");
+	tweak.loot.clear("minecraft:entities/pig");
 	```
 
 <br>
@@ -94,7 +94,7 @@ Adds a new loot pool to a loot table.
 !!! example
 	```python
 	#add a new pool to a zombie, dropping between 2 and 4 items
-	tweak.loot.addPool("entity/zombie", "tutorialPool", 2, 4);
+	tweak.loot.addPool("minecraft:entities/zombie", "tutorialPool", 2, 4);
 	```
 	
 <br>
@@ -109,7 +109,7 @@ Removes a loot pool from a loot table, removing all entries within it.
 !!! example
 	```python
 	#removes the main pool from zombies, meaning they will no longer drop rotten flesh
-	tweak.loot.removePool("entity/zombie", "main");
+	tweak.loot.removePool("minecraft:entities/zombie", "main");
 	```
 	
 <br>
@@ -131,7 +131,7 @@ Adds a new loot entry to a loot pool.
 !!! example
 	```python
 	#add a new entry to a zombie, causing it to drop diamonds
-	tweak.loot.addPool("entity/zombie", "tutorialPool", "tutorialEntry", <minecraft:diamond>, 1, 0);
+	tweak.loot.addPool("minecraft:entities/zombie", "tutorialPool", "tutorialEntry", <minecraft:diamond>, 1, 0);
 	```
 	
 <br>
@@ -146,7 +146,7 @@ Removes a loot entry from a loot pool.
 !!!example
 	```python
 	#removes the entry for string from spiders
-	tweak.loot.removeEntry("entities/spider", "main", "minecraft:string");"
+	tweak.loot.removeEntry("minecraft:entities/spider", "main", "minecraft:string");"
 	```
 	
 <br>
@@ -175,13 +175,13 @@ Flags the pool to only succeed when passing the defined chance, increased by bon
 !!! example
 	```python
 	#the pool will only generate if killed by a player
-	tweak.loot.addCondition("entity/zombie", "tutorialPool", "playerOnly");
+	tweak.loot.addCondition("minecraft:entities/zombie", "tutorialPool", "playerOnly");
 
 	#the pool will only generate 40% of the time
-	tweak.loot.addCondition("entity/zombie", "tutorialPool", "chance", 0.4);
+	tweak.loot.addCondition("minecraft:entities/zombie", "tutorialPool", "chance", 0.4);
 
 	#the pool will only generate 20% of the time, increased by 10% for each level of looting
-	tweak.loot.addCondition("entity/zombie", "tutorialPool", "chanceWithLooting", 0.2, 0.1);
+	tweak.loot.addCondition("minecraft:entities/zombie", "tutorialPool", "chanceWithLooting", 0.2, 0.1);
 	```
 	
 <br>
@@ -190,35 +190,28 @@ Flags the pool to only succeed when passing the defined chance, increased by bon
 ## addFunction
 
 **tweak.loot.addFunction([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, [string](/arguments/string/) value)**  
-**tweak.loot.addFunction([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, [string](/arguments/string/) value, [string](/arguments/string/) inputA, [integer](/arguments/integer/) inputB)**  
 **tweak.loot.addFunction([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, [string](/arguments/string/) value, [integer](/arguments/integer/) inputA, [integer](/arguments/integer/) inputB, [boolean](/arguments/boolean/) inputC)**  
 
 Adds a new function to a loot entry, the action chosen depends on the type of function you wish to add.  
 
 ### enchant
-**tweak.loot.addFunction([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, "enchant", [string](/arguments/string/) enchantName, [integer](/arguments/integer/) enchantLevel)**  
-Flags the entry to enchant the item with the specified enchant and level.  
-Multiple enchants can be applied to a single entry.  
-For a full list of enchantments take a look in the [glossary](/glossary/enchantments/).  
-
-### enchantRandomly
-**tweak.loot.addFunction([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, "enchantRandomly", [integer](/arguments/integer/) minPower, [integer](/arguments/integer/) maxPower, [boolean](/arguments/boolean/) allowTreasure)**  
+**tweak.loot.addFunction([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, "enchant", [integer](/arguments/integer/) minPower, [integer](/arguments/integer/) maxPower, [boolean](/arguments/boolean/) allowTreasure)**  
 Flags the entry to randomly enchant the item with a random enchantment strength, treasure enchants can be enabled/disabled.
 
 ### smelt
 **tweak.loot.addFunction([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, "smelt")**  
 Flags the pool to smelt the item if the entity is burning and the item can be smelted.  
 
+!!! note
+	Fixed enchants can be applied to loot using the [enchant modifier](/arguments/stack/#enchant/).
+
 !!! example
 	```python
-	#the entry will be enchanted with Sharpness III
-	tweak.loot.addFunction("entity/zombie", "tutorialPool", "tutorialEntry", "enchant", "sharpness", 3);
-
 	#the entry will be enchanted randomly with a power between 20 and 30, not allowing treasure enchants
-	tweak.loot.addFunction("entity/zombie", "tutorialPool", "tutorialEntry", "enchantRandomly", 20, 30, false);
+	tweak.loot.addFunction("minecraft:entities/zombie", "tutorialPool", "tutorialEntry", "enchant", 20, 30, false);
 
 	#the entry will be smelted if the entity was burning when killed
-	tweak.loot.addFunction("entity/zombie", "tutorialPool", "tutorialEntry", "smelt");
+	tweak.loot.addFunction("minecraft:entities/zombie", "tutorialPool", "tutorialEntry", "smelt");
 	```
 	
 <br>

@@ -9,7 +9,9 @@
 
 ---
 
-**/tweaked dict**
+<br>
+
+### /tweaked dict
 
 Prints a list of all [dicts](/arguments/dict/) associated to the currently held item to chat.
 
@@ -30,7 +32,7 @@ The printed text can be clicked to copy to the clipboard.
 
 <br>
 
-**/tweaked dict [dictName]**
+### /tweaked dict [dictName]
 
 Prints a list of all [stacks](/arguments/stack/) associated to the specified dictionary.
 

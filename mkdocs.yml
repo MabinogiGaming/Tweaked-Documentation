@@ -8,6 +8,7 @@ pages:
       - loot: 'actions/loot.md'
       - recipes: 'actions/recipes.md'
       - seeds: 'actions/seeds.md'
+      - trade: 'actions/trade.md'
     - Mod Actions:
       - Immersive Engineering:
         - ie: 'actions/ie/ie.md'
@@ -37,9 +38,12 @@ pages:
       - loot: 'commands/loot.md'
       - recipes: 'commands/recipes.md'
       - seeds: 'commands/seeds.md'
+      - trade: 'commands/trade.md'
     - Glossary:
       - Enchantments: 'glossary/enchantments.md'
       - Loot Tables: 'glossary/loottables.md'
+      - Map Types: 'glossary/maps.md'
+      - Villagers: 'glossary/villagers.md'
       - IE - Multiblocks: 'glossary/multiblocks.md'
         
 theme: 
@@ -65,4 +69,4 @@ extra:
   logo: 'img/favicon.ico'
   history_buttons: false
   article_nav_top: false
-  version: '0.3.3'
+  version: '0.3.4'
