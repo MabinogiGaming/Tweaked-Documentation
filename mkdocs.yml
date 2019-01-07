@@ -3,6 +3,7 @@ pages:
     - Getting Started: 'started.md'
     - Base Actions:
       - anvil: 'actions/anvil.md'
+      - brewing: 'actions/brewing.md'
       - dict: 'actions/dict.md'
       - lang: 'actions/lang.md'
       - loot: 'actions/loot.md'
@@ -43,6 +44,7 @@ pages:
       - Enchantments: 'glossary/enchantments.md'
       - Loot Tables: 'glossary/loottables.md'
       - Map Types: 'glossary/maps.md'
+      - Potions: 'glossary/potions.md'
       - Villagers: 'glossary/villagers.md'
       - IE - Multiblocks: 'glossary/multiblocks.md'
         
@@ -69,4 +71,4 @@ extra:
   logo: 'img/favicon.ico'
   history_buttons: false
   article_nav_top: false
-  version: '0.3.5'
+  version: '0.3.6'
