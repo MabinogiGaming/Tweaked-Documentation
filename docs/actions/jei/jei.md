@@ -33,20 +33,6 @@ Hides an item from jei.
 <br>
 
 ---
-## remove
-*tweak.jei.remove([stack](/arguments/stack/) item);*
-
-Similar to hide, except that it also removes recipes for this item as if calling [tweak.recipes.remove](/actions/recipes/#remove)
-
-!!! example
-	```python
-	#hides diamond in jei and removes all recipes for it
-	tweak.jei.remove(<minecraft:diamond>);
-	```
-	
-<br>
-
----
 ## addInfo
 *tweak.jei.addInfo([stack](/arguments/stack/) item, [string](/arguments/string/) string);*
 

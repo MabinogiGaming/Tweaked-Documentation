@@ -5,6 +5,7 @@ pages:
       - anvil: 'actions/anvil.md'
       - brewing: 'actions/brewing.md'
       - dict: 'actions/dict.md'
+      - furnace: 'actions/furnace.md'
       - lang: 'actions/lang.md'
       - loot: 'actions/loot.md'
       - recipes: 'actions/recipes.md'
@@ -71,4 +72,4 @@ extra:
   logo: 'img/favicon.ico'
   history_buttons: false
   article_nav_top: false
-  version: '0.3.7'
+  version: '0.3.8'
