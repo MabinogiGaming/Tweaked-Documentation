@@ -2,58 +2,73 @@
 
 Tweaks involving the Blast Furnace from Immersive Engineering.
 
+<br>
+
+---
 ## add
-*tweak.ie.blastfurnace.add([stack](/arguments/stack/) output, [stack](/arguments/stack/) input, [integer](/arguments/integer/) time);*  
-*tweak.ie.blastfurnace.add([stack](/arguments/stack/) output, [stack](/arguments/stack/) input, [integer](/arguments/integer/) time, [stack](/arguments/stack/) slag);*  
-*tweak.ie.blastfurnace.add([stack](/arguments/stack/) output, [dict](/arguments/dict/) input, [integer](/arguments/integer/) time);*  
-*tweak.ie.blastfurnace.add([stack](/arguments/stack/) output, [dict](/arguments/dict/) input, [integer](/arguments/integer/) time, [stack](/arguments/stack/) slag);*
+
+<pre>tweak.ie.blastfurnace.add(<a href="/arguments/stack/">stack</a> output, <a href="/arguments/stack/">stack</a> input, <a href="/arguments/integer/">integer</a> time)</pre>
+<pre>tweak.ie.blastfurnace.add(<a href="/arguments/stack/">stack</a> output, <a href="/arguments/stack/">stack</a> input, <a href="/arguments/integer/">integer</a> time, <a href="/arguments/stack/">stack</a> slag)</pre>
+<pre>tweak.ie.blastfurnace.add(<a href="/arguments/stack/">stack</a> output, <a href="/arguments/dict/">dict</a> input, <a href="/arguments/integer/">integer</a> time)</pre>
+<pre>tweak.ie.blastfurnace.add(<a href="/arguments/stack/">stack</a> output, <a href="/arguments/dict/">dict</a> input, <a href="/arguments/integer/">integer</a> time, <a href="/arguments/stack/">stack</a> slag)</pre>
 
 Adds a new recipe to the blast furnace.
-```python
-#adds recipe where stone turns into diamonds and produces coal as slag, taking 1000 ticks
-tweak.ie.blastfurnace.add(<minecraft:diamond>, <minecraft:stone>, 1000, <minecraft:coal>);
-```
+
+!!! example
+	```python
+	#adds recipe where stone turns into diamonds and produces coal as slag, taking 1000 ticks
+	tweak.ie.blastfurnace.add(<minecraft:diamond>, <minecraft:stone>, 1000, <minecraft:coal>);
+	```
 <br>
 
 ---
 ## remove
-*tweak.ie.blastfurnace.remove([stack](/arguments/stack/) output);*  
-*tweak.ie.blastfurnace.remove([stackList](/arguments/stacklist/) outputs);*  
-*tweak.ie.blastfurnace.remove([all](/arguments/all/) all);*
+
+<pre>tweak.ie.blastfurnace.remove(<a href="/arguments/all/">all</a> *)</pre>
+<pre>tweak.ie.blastfurnace.remove(<a href="/arguments/stack/">stack</a> output)</pre>
+<pre>tweak.ie.blastfurnace.remove(<a href="/arguments/stacklist/">stacklist</a> outputs)</pre>
 
 Removes all recipes from the blast furnace that have the provided output.
-```python
-#removes a recipe to make coal from the blast furnace
-tweak.ie.blastfurnace.remove(<minecraft:coal>);
 
-#removes all recipes from the blast furnace
-tweak.ie.blastfurnace.remove(*);
-```
+!!! example
+	```python
+	#removes a recipe to make coal from the blast furnace
+	tweak.ie.blastfurnace.remove(<minecraft:coal>);
+
+	#removes all recipes from the blast furnace
+	tweak.ie.blastfurnace.remove(*);
+	```
 <br>
 
 ---
 ## addFuel
-*tweak.ie.blastfurnace.addFuel([stack](/arguments/stack/) fuel, [integer](/arguments/integer/) burnTime);*  
-*tweak.ie.blastfurnace.addFuel([dict](/arguments/dict/) fuel, [integer](/arguments/integer/) burnTime);*
+
+<pre>tweak.ie.blastfurnace.addFuel(<a href="/arguments/stack/">stack</a> fuel, <a href="/arguments/integer/">integer</a> time)</pre>
+<pre>tweak.ie.blastfurnace.addFuel(<a href="/arguments/dict/">dict</a> fuel, <a href="/arguments/integer/">integer</a> time)</pre>
 
 Adds a new fuel to the blast furnace.
-```python
-#adds diamonds as a fuel type that burn for 1000 ticks
-tweak.ie.blastfurnace.addFuel(<minecraft:diamond>, 1000);
-```
+
+!!! example
+	```python
+	#adds diamonds as a fuel type that burn for 1000 ticks
+	tweak.ie.blastfurnace.addFuel(<minecraft:diamond>, 1000);
+	```
 <br>
 
 ---
 ## removeFuel
-*tweak.ie.blastfurnace.removeFuel([stack](/arguments/stack/) fuel);*  
-*tweak.ie.blastfurnace.removeFuel([stackList](/arguments/stacklist/) fuels);*  
-*tweak.ie.blastfurnace.removeFuel([all](/arguments/all/) all);*
+
+<pre>tweak.ie.blastfurnace.removeFuel(<a href="/arguments/all/">all</a> *)</pre>
+<pre>tweak.ie.blastfurnace.removeFuel(<a href="/arguments/stack/">stack</a> fuel)</pre>
+<pre>tweak.ie.blastfurnace.removeFuel(<a href="/arguments/stacklist/">stacklist</a> fuels)</pre>
 
 Removes any matching fuels from the blast furnace.
-```python
-#removes a charcoal as a fuel from the blast furnace
-tweak.ie.blastfurnace.removeFuel(<minecraft:charcoal>);
 
-#removes all fuels from the blast furnace
-tweak.ie.blastfurnace.removeFuel(*);
-```
+!!! example
+	```python
+	#removes a charcoal as a fuel from the blast furnace
+	tweak.ie.blastfurnace.removeFuel(<minecraft:charcoal>);
+
+	#removes all fuels from the blast furnace
+	tweak.ie.blastfurnace.removeFuel(*);
+	```

@@ -6,7 +6,8 @@ Tweaks involving the mod Just Enough Items.
 
 ---
 ## add
-*tweak.jei.add([stack](/arguments/stack/) item);*
+
+<pre>tweak.jei.add(<a href="/arguments/stack/">stack</a> stack)</pre>
 
 Adds an item to JEI, can be useful for items that are hidden by default.
 
@@ -20,7 +21,8 @@ Adds an item to JEI, can be useful for items that are hidden by default.
 
 ---
 ## hide
-*tweak.jei.hide([stack](/arguments/stack/) item);*
+
+<pre>tweak.jei.hide(<a href="/arguments/stack/">stack</a> stack)</pre>
 
 Hides an item from jei.
 
@@ -34,7 +36,8 @@ Hides an item from jei.
 
 ---
 ## addInfo
-*tweak.jei.addInfo([stack](/arguments/stack/) item, [string](/arguments/string/) string);*
+
+<pre>tweak.jei.addInfo(<a href="/arguments/stack/">stack</a> stack, <a href="/arguments/string/">string</a> info)</pre>
 
 Adds text to the information page for the specified stack.
 

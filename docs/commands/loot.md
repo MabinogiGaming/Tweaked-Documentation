@@ -1,7 +1,14 @@
 # loot
 
-**/tweaked loot [loottable]**  
-**/tweaked loot [loottable] [count]**
+Provides debugging abilities related to loot drop tables.
+
+<br>
+
+---
+## loot
+
+<pre>/tweaked loot [loottable]</pre>
+<pre>/tweaked loot [loottable] [count]</pre>
 
 Generates loot as though you had killed/opened the specified loottable and throws the items on the ground.
 

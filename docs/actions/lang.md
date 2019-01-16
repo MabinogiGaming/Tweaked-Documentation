@@ -8,10 +8,10 @@ Tweaks involving language files and translations.
 
 ## set
 
-**tweak.lang.set([string](/arguments/string/) string, [string](/arguments/string/) name)**  
-**tweak.lang.set([stack](/arguments/stack/) stack, [string](/arguments/string/) name)**
+<pre>tweak.lang.set(<a href="/arguments/string/">string</a> string, <a href="/arguments/string/">string</a> name)</pre>
+<pre>tweak.lang.set(<a href="/arguments/stack/">stack</a> stack, <a href="/arguments/string/">string</a> name)</pre>
 
-Sets the translated name for the provided string/item/block, overriding the normal one.
+Sets the translated name for the provided string/stack, overriding the normal one.
 
 !!!example
 	```python

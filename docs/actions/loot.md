@@ -62,7 +62,7 @@ However, it is important to note that this essentially clears the Withers curren
 ---
 ## clear
 
-**tweak.loot.clear([string](/arguments/string/) key)**  
+<pre>tweak.loot.clear(<a href="/arguments/string/">string</a> key)</pre>
 
 Clears all loot pools from loot table, essentially removing all loot.
 
@@ -77,8 +77,8 @@ Clears all loot pools from loot table, essentially removing all loot.
 ---
 ## addPool
 
-**tweak.loot.addPool([string](/arguments/string/) key, [string](/arguments/string/) poolName, [integer](/arguments/integer/) minCount, [integer](/arguments/integer/) maxCount)**  
-**tweak.loot.addPool([string](/arguments/string/) key, [string](/arguments/string/) poolName, [integer](/arguments/integer/) minCount, [integer](/arguments/integer/) maxCount, [integer](/arguments/integer/) minBonus, [integer](/arguments/integer/) maxBonus)**  
+<pre>tweak.loot.addPool(<a href="/arguments/string/">string</a> key, <a href="/arguments/string/">string</a> poolName, <a href="/arguments/integer/">integer</a> minCount, <a href="/arguments/integer/">integer</a> maxCount)</pre>
+<pre>tweak.loot.addPool(<a href="/arguments/string/">string</a> key, <a href="/arguments/string/">string</a> poolName, <a href="/arguments/integer/">integer</a> minCount, <a href="/arguments/integer/">integer</a> maxCount, <a href="/arguments/integer/">integer</a> minBonus, <a href="/arguments/integer/">integer</a> maxBonus)</pre>
 
 Adds a new loot pool to a loot table.  
 
@@ -102,7 +102,7 @@ Adds a new loot pool to a loot table.
 ---
 ## removePool
 
-**tweak.loot.removePool([string](/arguments/string/) key, [string](/arguments/string/) poolName)**  
+<pre>tweak.loot.removePool(<a href="/arguments/string/">string</a> key, <a href="/arguments/string/">string</a> poolName)</pre>
 
 Removes a loot pool from a loot table, removing all entries within it.
 
@@ -117,8 +117,8 @@ Removes a loot pool from a loot table, removing all entries within it.
 ---
 ## addEntry
 
-**tweak.loot.addEntry([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, [stack](/arguments/stack/) stack, [integer](/arguments/integer/) weight, [integer](/arguments/integer/) quality)**  
-**tweak.loot.addEntry([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, [stack](/arguments/stack/) stack, [integer](/arguments/integer/) weight, [integer](/arguments/integer/) quality, [integer](/arguments/integer/) bonusMin, [integer](/arguments/integer/) bonusMax)**  
+<pre>tweak.loot.addEntry(<a href="/arguments/string/">string</a> key, <a href="/arguments/string/">string</a> poolName, <a href="/arguments/string/">string</a> entryName, <a href="/arguments/stack/">stack</a> stack, <a href="/arguments/integer/">integer</a> weight, <a href="/arguments/integer/">integer</a> quality)</pre>
+<pre>tweak.loot.addEntry(<a href="/arguments/string/">string</a> key, <a href="/arguments/string/">string</a> poolName, <a href="/arguments/string/">string</a> entryName, <a href="/arguments/stack/">stack</a> stack, <a href="/arguments/integer/">integer</a> weight, <a href="/arguments/integer/">integer</a> quality, <a href="/arguments/integer/">integer</a> bonusMin, <a href="/arguments/integer/">integer</a> bonusMax)</pre>
 
 Adds a new loot entry to a loot pool.  
 
@@ -139,7 +139,7 @@ Adds a new loot entry to a loot pool.
 ---
 ## removeEntry
 
-**tweak.loot.removeEntry([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName)**  
+<pre>tweak.loot.removeEntry(<a href="/arguments/string/">string</a> key, <a href="/arguments/string/">string</a> poolName, <a href="/arguments/string/">string</a> entryName)</pre>
 
 Removes a loot entry from a loot pool.
 
@@ -154,22 +154,18 @@ Removes a loot entry from a loot pool.
 ---
 ## addCondition
 
-**tweak.loot.addCondition([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) value)**  
-**tweak.loot.addCondition([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) value, [float](/arguments/float/) inputA)**  
-**tweak.loot.addCondition([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) value, [float](/arguments/float/) inputA, [float](/arguments/float/) inputB)**  
-
 Adds a new condition to a loot pool, the action chosen depends on the type of condition you wish to add.  
 
 ### playerOnly
-**tweak.loot.addCondition([string](/arguments/string/) key, [string](/arguments/string/) poolName, "playerOnly")**  
+<pre>tweak.loot.addCondition(<a href="/arguments/string/">string</a> key, <a href="/arguments/string/">string</a> poolName, "playerOnly")</pre>
 Flags the pool to only succeed when killed by a player.  
 
 ### chance
-**tweak.loot.addCondition([string](/arguments/string/) key, [string](/arguments/string/) poolName, "chance", [float](/arguments/float/) succeedChance)**  
+<pre>tweak.loot.addCondition(<a href="/arguments/string/">string</a> key, <a href="/arguments/string/">string</a> poolName, "chance", <a href="/arguments/float/">float</a> successChance)</pre>
 Flags the pool to only succeed when passing the defined chance.  
 
 ### chanceWithLooting
-**tweak.loot.addCondition([string](/arguments/string/) key, [string](/arguments/string/) poolName, "chanceWithLooting", [float](/arguments/float/) succeedChance, [float](/arguments/float/) bonusChance)**  
+<pre>tweak.loot.addCondition(<a href="/arguments/string/">string</a> key, <a href="/arguments/string/">string</a> poolName, "chanceWithLooting", <a href="/arguments/float/">float</a> successChance, <a href="/arguments/float/">float</a> bonusChance)</pre>
 Flags the pool to only succeed when passing the defined chance, increased by bonusChance for each level of looting.  
 
 !!! example
@@ -189,21 +185,19 @@ Flags the pool to only succeed when passing the defined chance, increased by bon
 ---
 ## addFunction
 
-**tweak.loot.addFunction([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, [string](/arguments/string/) value)**  
-**tweak.loot.addFunction([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, [string](/arguments/string/) value, [integer](/arguments/integer/) inputA, [integer](/arguments/integer/) inputB, [boolean](/arguments/boolean/) inputC)**  
-
 Adds a new function to a loot entry, the action chosen depends on the type of function you wish to add.  
 
 ### enchant
-**tweak.loot.addFunction([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, "enchant", [integer](/arguments/integer/) minPower, [integer](/arguments/integer/) maxPower, [boolean](/arguments/boolean/) allowTreasure)**  
+
+<pre>tweak.loot.addFunction(<a href="/arguments/string/">string</a> key, <a href="/arguments/string/">string</a> poolName, <a href="/arguments/string/">string</a> entryName, "enchant", <a href="/arguments/integer/">integer</a> minPower, <a href="/arguments/integer/">integer</a> maxPower, <a href="/arguments/boolean/">boolean</a> allowTreasure)</pre>
 Flags the entry to randomly enchant the item with a random enchantment strength, treasure enchants can be enabled/disabled.
 
 ### smelt
-**tweak.loot.addFunction([string](/arguments/string/) key, [string](/arguments/string/) poolName, [string](/arguments/string/) entryName, "smelt")**  
+<pre>tweak.loot.addFunction(<a href="/arguments/string/">string</a> key, <a href="/arguments/string/">string</a> poolName, <a href="/arguments/string/">string</a> entryName, "smelt")</pre>
 Flags the pool to smelt the item if the entity is burning and the item can be smelted.  
 
 !!! note
-	Fixed enchants can be applied to loot using the [enchant modifier](/arguments/stack/#enchant/).
+	Fixed enchants can be applied to loot using the [enchant modifier](/arguments/stack/#enchant).
 
 !!! example
 	```python

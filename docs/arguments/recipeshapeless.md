@@ -7,7 +7,7 @@ A shapeless recipe is one that can have the inputs placed in any order, their po
 ## Argument
 
 The arrangement of a recipe is important not important, inputs can be placed in any order :  
-`[<A>,<B>,<C>,<D>,<E>,<F>,<G>,<H>,<I>]`
+<pre>[&lt;A&gt;,&lt;B&gt;,&lt;C&gt;,&lt;D&gt;,&lt;E&gt;,&lt;F&gt;,&lt;G&gt;,&lt;H&gt;,&lt;I&gt;]</pre>
 
 Where A-I are [ingredients](/arguments/ingredient/)
 
@@ -15,7 +15,8 @@ The number of ingredients can be anything from 1-9.
 
 The best way to illustrate this is examples of vanilla recipes :
 
-```python
-#flint and steel (1 flint, 1 iron)
-[<minecraft:flint>, <ingotIron>]
-```
+!!! example
+	```python
+	#flint and steel (1 flint, 1 iron)
+	[<minecraft:flint>, <ingotIron>]
+	```

@@ -7,7 +7,7 @@ Tweaks involving changing of brewing recipes created with the Brewing Stand.
 ---
 ## add
 
-**tweak.brewing.add([stack](/arguments/stack/) ingredient, [stack](/arguments/stack/) input, [stack](/arguments/stack/) output)**  
+<pre>tweak.brewing.add(<a href="/arguments/stack/">stack</a> ingredient, <a href="/arguments/stack/">stack</a> input, <a href="/arguments/stack/">stack</a> output)</pre>
 
 Adds a brewing recipe where an ingredient can be brewed with an input to create an output.
 Potions can be specified using nbt data, a list of potion types can be found [here](/glossary/potions/).
@@ -23,8 +23,8 @@ Potions can be specified using nbt data, a list of potion types can be found [he
 ---
 ## remove
 
-**tweak.brewing.remove([all](/arguments/all/) all)**  
-**tweak.brewing.remove([stack](/arguments/stack/) ingredient)**  
+<pre>tweak.brewing.remove(<a href="/arguments/all/">all</a> *)</pre>
+<pre>tweak.brewing.remove(<a href="/arguments/stack/">stack</a> ingredient)</pre>
 
 Remove all or a recipe with the specified ingredient.
 

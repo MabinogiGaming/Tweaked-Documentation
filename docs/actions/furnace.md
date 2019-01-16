@@ -7,8 +7,8 @@ Tweaks involving changing of Vanilla furnace recipes and fuels.
 ---
 ## add
 
-**tweak.furnace.add([stack](/arguments/stack/) input, [stack](/arguments/stack/) output)**  
-**tweak.furnace.add([stack](/arguments/stack/) input, [stack](/arguments/stack/) output, [float](/arguments/float/) experience)**  
+<pre>tweak.furnace.add(<a href="/arguments/stack/">stack</a> input, <a href="/arguments/stack/">stack</a> output)</pre>
+<pre>tweak.furnace.add(<a href="/arguments/stack/">stack</a> input, <a href="/arguments/stack/">stack</a> output, <a href="/arguments/float/">float</a> experience)</pre>
 
 Adds a recipe to the furnace with the option to specify the experience dropped.
 
@@ -23,8 +23,8 @@ Adds a recipe to the furnace with the option to specify the experience dropped.
 ---
 ## remove
 
-**tweak.furnace.remove([all](/arguments/all/) all)**  
-**tweak.furnace.remove([stack](/arguments/stack/) output)**  
+<pre>tweak.furnace.remove(<a href="/arguments/all/">all</a> *)</pre>
+<pre>tweak.furnace.remove(<a href="/arguments/stack/">stack</a> output)</pre>
 
 Remove all or a recipe specified by its output.
 
@@ -39,7 +39,7 @@ Remove all or a recipe specified by its output.
 ---
 ## addfuel
 
-**tweak.furnace.addFuel([stack](/arguments/stack/) fuel, [integer](/arguments/integer/) burnTime)**  
+<pre>tweak.furnace.addFuel(<a href="/arguments/stack/">stack</a> fuel, <a href="/arguments/integer/">integer</a> burnTime)</pre>
 
 Adds a new fuel type, burning for the specified time.
 
@@ -54,8 +54,8 @@ Adds a new fuel type, burning for the specified time.
 ---
 ## removefuel
 
-**tweak.furnace.removeFuel([all](/arguments/all/) all)**  
-**tweak.furnace.removeFuel([stack](/arguments/stack/) fuel)**  
+<pre>tweak.furnace.removeFuel(<a href="/arguments/all/">all</a> *)</pre>
+<pre>tweak.furnace.removeFuel(<a href="/arguments/stack/">stack</a> output)</pre>
 
 Removes all or a specified fuel.
 

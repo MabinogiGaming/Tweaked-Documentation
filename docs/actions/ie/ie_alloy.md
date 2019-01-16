@@ -2,29 +2,38 @@
 
 Tweaks involving the **Alloy Kiln** from Immersive Engineering.
 
+<br>
+
+---
 ## add
-*tweak.ie.alloy.add([stack](/arguments/stack/) output, [stack](/arguments/stack/) inputA, [stack](/arguments/stack/) inputB, [integer](/arguments/integer/) time);*  
-*tweak.ie.alloy.add([stack](/arguments/stack/) output, [stack](/arguments/stack/) inputA, [dict](/arguments/dict/) inputB, [integer](/arguments/integer/) time);*  
-*tweak.ie.alloy.add([stack](/arguments/stack/) output, [dict](/arguments/dict/) inputA, [dict](/arguments/dict/) inputB, [integer](/arguments/integer/) time);*  
+
+<pre>tweak.ie.alloy.add(<a href="/arguments/stack/">stack</a> output, <a href="/arguments/stack/">stack</a> inputA, <a href="/arguments/stack/">stack</a> inputB, <a href="/arguments/integer/">integer</a> time)</pre>
+<pre>tweak.ie.alloy.add(<a href="/arguments/stack/">stack</a> output, <a href="/arguments/stack/">stack</a> inputA, <a href="/arguments/dict/">dict</a> inputB, <a href="/arguments/integer/">integer</a> time)</pre>
+<pre>tweak.ie.alloy.add(<a href="/arguments/stack/">stack</a> output, <a href="/arguments/dict/">dict</a> inputA, <a href="/arguments/dict/">dict</a> inputB, <a href="/arguments/integer/">integer</a> time)</pre>
 
 Adds a new recipe to the **Alloy Kiln**.
-```python
-#adds recipe where stone and iron turns into diamonds, taking 1000 ticks
-tweak.ie.alloy.add(<minecraft:diamond>, <minecraft:stone>, <ingotIron>, 1000);
-```
+
+!!! example
+	```python
+	#adds recipe where stone and iron turns into diamonds, taking 1000 ticks
+	tweak.ie.alloy.add(<minecraft:diamond>, <minecraft:stone>, <ingotIron>, 1000);
+	```
 <br>
 
 ---
 ## remove
-*tweak.ie.alloy.remove([stack](/arguments/stack/) output);*  
-*tweak.ie.alloy.remove([stackList](/arguments/stacklist/) outputs);*  
-*tweak.ie.alloy.remove([all](/arguments/all/) all);*
+
+<pre>tweak.ie.alloy.remove(<a href="/arguments/all/">all</a> *)</pre>
+<pre>tweak.ie.alloy.remove(<a href="/arguments/stack/">stack</a> output)</pre>
+<pre>tweak.ie.alloy.remove(<a href="/arguments/stacklist/">stacklist</a> outputs)</pre>
 
 Removes all recipes from the **Alloy Kiln** that have the provided output
-```python
-#removes the recipe to make charcoal from the alloy kiln
-tweak.ie.alloy.remove(<minecraft:coal:1>);
 
-#removes all recipes from the alloy kiln
-tweak.ie.alloy.remove(*);
-```
+!!! example
+	```python
+	#removes the recipe to make charcoal from the alloy kiln
+	tweak.ie.alloy.remove(<minecraft:coal:1>);
+
+	#removes all recipes from the alloy kiln
+	tweak.ie.alloy.remove(*);
+	```

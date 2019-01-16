@@ -7,7 +7,7 @@ Tweaks involving changing of seeds dropped when destroying tall grass.
 ---
 ## add
 
-**tweak.seeds.add([stack](/arguments/stack/) seed, [integer](/arguments/integer/) weight)**  
+<pre>tweak.seeds.add(<a href="/arguments/stack/">stack</a> seed, <a href="/arguments/integer/">integer</a> weight)</pre>
 
 Adds a seed to the drop table with a specified weight.
 Seeds are chosen by comparing weights to each other, as reference vanilla seeds have a weight of 10.
@@ -23,8 +23,8 @@ Seeds are chosen by comparing weights to each other, as reference vanilla seeds 
 ---
 ## remove
 
-**tweak.seeds.remove([all](/arguments/all/) all)**  
-**tweak.seeds.remove([stack](/arguments/stack/) seed)**  
+<pre>tweak.seeds.remove(<a href="/arguments/all/">all</a> *)</pre>
+<pre>tweak.seeds.remove(<a href="/arguments/stack/">stack</a> seed)</pre>
 
 Remove all or a specified seed drop, preventing it from dropping from tall grass.
 

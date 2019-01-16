@@ -1,5 +1,7 @@
 # dict
 
+Provides information related to the Ore Dictionary.
+
 !!! note
 
 	Forge uses a wildcard meta value of 30000 to allow specifying all metadatas of an item.
@@ -8,10 +10,9 @@
 <br>
 
 ---
+## dict
 
-<br>
-
-### /tweaked dict
+<pre>/tweaked dict</pre>
 
 Prints a list of all [dicts](/arguments/dict/) associated to the currently held item to chat.
 
@@ -29,10 +30,9 @@ The printed text can be clicked to copy to the clipboard.
 <br>
 
 ---
+## dict [dictName]
 
-<br>
-
-### /tweaked dict [dictName]
+<pre>/tweaked dict [dictName]</pre>
 
 Prints a list of all [stacks](/arguments/stack/) associated to the specified dictionary.
 

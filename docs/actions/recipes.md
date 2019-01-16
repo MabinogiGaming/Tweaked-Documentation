@@ -4,45 +4,56 @@ Tweaks involving crafting table recipes.
 
 ## remove
 
-*tweak.recipes.remove([string](/arguments/string/) name)*  
-*tweak.recipes.remove([stringList](/arguments/stringlist/) names)*
+<pre>tweak.recipes.remove(<a href="/arguments/string/">string</a> name)</pre>
+<pre>tweak.recipes.remove(<a href="/arguments/stringlist/">stringlist</a> names)</pre>
 
 Disable the specific recipe that matches the provided name
-```python
-#remove the default crafting recipe for a torch
-tweak.recipes.remove("minecraft:torch");
-```
+
+!!! note
+	The [recipes command](/commands/recipes/) can be used to get a list of recipes for an item.
+
+!!! example
+	```python
+	#remove the default crafting recipe for a torch
+	tweak.recipes.remove("minecraft:torch");
+	```
 <br>
 
-*tweak.recipes.remove([stack](/arguments/stack/) output)*  
-*tweak.recipes.remove([stackList](/arguments/stacklist/) outputs)*
+<pre>tweak.recipes.remove(<a href="/arguments/stack/">stack</a> output)</pre>
+<pre>tweak.recipes.remove(<a href="/arguments/stacklist/">stacklist</a> outputs)</pre>
 
 Disable all crafting recipes that match the provided output
-```python
-#remove all crafting recipes for torches
-tweak.recipes.remove(<minecraft:torch>);
-```
+
+!!! example
+	```python
+	#remove all crafting recipes for torches
+	tweak.recipes.remove(<minecraft:torch>);
+	```
 <br>
 
 ---
 ## shaped
 
-*tweak.recipes.shaped([string](/arguments/string/) name, [stack](/arguments/stack/) output, [recipeShaped](/arguments/recipeshaped/) recipe)*
+<pre>tweak.recipes.shaped(<a href="/arguments/string/">string</a> name, <a href="/arguments/stack/">stack</a> output, <a href="/arguments/recipeshaped/">recipeShaped</a> recipe)</pre>
 
 Adds a new shaped crafting recipe
-```python
-#adds a shaped recipe that turns 1 stone into diamond
-tweak.recipes.shaped("cheat_diamond", <minecraft:diamond>, [[<minecraft:stone>]]);
-```
+
+!!! example
+	```python
+	#adds a shaped recipe that turns 1 stone into diamond
+	tweak.recipes.shaped("cheat_diamond", <minecraft:diamond>, [[<minecraft:stone>]]);
+	```
 <br>
 
 ---
 ## shapeless
 
-*tweak.recipes.shapeless([string](/arguments/string/) name, [stack](/arguments/stack/) output, [recipeShapeless](/arguments/recipeshapeless/) recipe)*
+<pre>tweak.recipes.shapeless(<a href="/arguments/string/">string</a> name, <a href="/arguments/stack/">stack</a> output, <a href="/arguments/recipeshapeless/">recipeShapeless</a> recipe)</pre>
 
 Adds a new shapeless crafting recipe
-```python
-#adds a shaped recipe that turns 1 stone into diamond
-tweak.recipes.shapeless("cheat_diamond", <minecraft:diamond>, [<minecraft:stone>]);
-```
+
+!!! example
+	```python
+	#adds a shaped recipe that turns 1 stone into diamond
+	tweak.recipes.shapeless("cheat_diamond", <minecraft:diamond>, [<minecraft:stone>]);
+	```

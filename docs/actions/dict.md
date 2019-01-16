@@ -9,7 +9,7 @@ Items that are registered to the OreDictionary become interchangeable with other
 ---
 ## add
 
-**tweak.dict.add([string](/arguments/string/) oreName, [stack](/arguments/stack/) stack)**  
+<pre>tweak.dict.add(<a href="/arguments/string/">string</a> oreName, <a href="/arguments/stack/">stack</a> stack)</pre>
 
 Assigns the specified stack to the oreName dictionary.
 
@@ -29,7 +29,7 @@ Assigns the specified stack to the oreName dictionary.
 ---
 ## remove
 
-**tweak.dict.remove([string](/arguments/string/) oreName, [stack](/arguments/stack/) stack)**  
+<pre>tweak.dict.remove(<a href="/arguments/string/">string</a> oreName, <a href="/arguments/stack/">stack</a> stack)</pre>
 
 Removes the specified stack from the oreName dictionary.
 
@@ -44,7 +44,7 @@ Removes the specified stack from the oreName dictionary.
 ---
 ## replace
 
-**tweak.dict.replace([string](/arguments/string/) oreName, [stack](/arguments/stack/) stack)**  
+<pre>tweak.dict.replace(<a href="/arguments/string/">string</a> oreName, <a href="/arguments/stack/">stack</a> stack)</pre>
 
 Replaces all current stacks in the oreName dictionary with the specified stack.
 

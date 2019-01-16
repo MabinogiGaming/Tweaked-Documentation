@@ -8,8 +8,10 @@ A stack is a type of [ingredient](/arguments/ingredient/) and can therefore be u
 Stack information is split using the `:` modifier, with each split item being referred to as a token.  
 A stack can have between 2-5 tokens and the number of tokens determine what information is passed in.
 
+<br>
+
 ### 2 Tokens - Basic Stack
-`<mod:name>`
+<pre>&lt;mod:name&gt;</pre>
 
 Creates a stack using the item/block registered by the provided mod and name.
 
@@ -19,8 +21,10 @@ Creates a stack using the item/block registered by the provided mod and name.
 	<minecraft:diamond>
 	```
 
+<br>
+	
 ### 3 Tokens - Stack with Meta
-`<mod:name:meta>`
+<pre>&lt;mod:name:meta&gt;</pre>
 
 Creates a stack using the item/block registered by the provided mod and name, using the specified meta data.
 
@@ -33,8 +37,10 @@ Creates a stack using the item/block registered by the provided mod and name, us
 	<minecraft:wool:3>
 	```
 
+<br>
+	
 ### 4 Tokens - Stack with Meta and Count
-`<mod:name:meta:count>`
+<pre>&lt;mod:name:meta:count&gt;</pre>
 
 Creates a stack using the item/block registered by the provided mod and name, using the specified meta data and item count.
 
@@ -47,8 +53,10 @@ Creates a stack using the item/block registered by the provided mod and name, us
 	<minecraft:diamond:0:16>
 	```
 
+<br>
+	
 ### 5 Tokens - Stack with Meta, Count and NBTCompound
-`<mod:name:meta:count:nbt>`
+<pre>&lt;mod:name:meta:count:nbt&gt;</pre>
 
 Creates a stack using the item/block registered by the provided mod and name, using the specified meta data, item count and nbt compound.
 
@@ -84,9 +92,11 @@ They are specified using the syntax `.modifer{ arguments }`.
 
 !!! note
 	Multiple modifiers can be added by simply adding them after each other.
+	
+<br>
 
 ### enchant
-`.enchant{enchantment:level}`
+<pre>.enchant{enchantment:level}</pre>
 
 Applies a specified enchantment to the stack.
 

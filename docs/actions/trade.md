@@ -40,7 +40,7 @@ More information can be found on the official site [here](https://minecraft.game
 
 ## setName
 
-**tweak.trade.setName([string](/arguments/string/) career, [string](/arguments/string/) name)**  
+<pre>tweak.trade.setName(<a href="/arguments/string/">string</a> career, <a href="/arguments/string/">string</a> name)</pre>
 
 Changes the name of the villager, creating the untranslated format of : entity.Villager.name.
 
@@ -48,7 +48,7 @@ Changes the name of the villager, creating the untranslated format of : entity.V
 	This is done after any other trade commands, meaning the old name should be used for them.
 	
 !!! note
-	This will usually be accompanied by a translation using [translate](/actions/lang/#translate/).
+	This will usually be accompanied by a translation using [translate](/actions/lang/#translate).
 
 !!! example
 	```python
@@ -62,9 +62,9 @@ Changes the name of the villager, creating the untranslated format of : entity.V
 
 ## clear
 
-**tweak.trade.clear([all](/arguments/all/) *)**  
-**tweak.trade.clear([string](/arguments/string/) career)**  
-**tweak.trade.clear([stringlist](/arguments/stringlist/) careerList)**  
+<pre>tweak.trade.clear(<a href="/arguments/all/">all</a> *)</pre>
+<pre>tweak.trade.clear(<a href="/arguments/string/">string</a> career)</pre>
+<pre>tweak.trade.clear(<a href="/arguments/stringlist/">stringlist</a> careers)</pre>
 
 Clears the trades of all/provided careers, meaning they will not talk to the player unless trades are added manually.
 
@@ -83,7 +83,7 @@ Clears the trades of all/provided careers, meaning they will not talk to the pla
 
 ## addCareer
 
-**tweak.trade.addCareer([all](/arguments/all/) all)**  
+<pre>tweak.trade.addCareer(<a href="/arguments/string/">string</a> profession, <a href="/arguments/string/">string</a> career)</pre>
 
 Adds a new career to a profession.
 
@@ -102,8 +102,8 @@ Adds a new career to a profession.
 
 ## addTrade
 
-**tweak.trade.addTrade([string](/arguments/string/) career, [integer](/arguments/integer/) level, [stack](/arguments/stack/) input, [stack](/arguments/stack/) output)**   
-**tweak.trade.addTrade([string](/arguments/string/) career, [integer](/arguments/integer/) level, [stack](/arguments/stack/) inputA, [stack](/arguments/stack/) inputB, [stack](/arguments/stack/) output)**   
+<pre>tweak.trade.addTrade(<a href="/arguments/string/">string</a> career, <a href="/arguments/integer/">integer</a> level, <a href="/arguments/stack/">stack</a> input, <a href="/arguments/stack/">stack</a> output)</pre>
+<pre>tweak.trade.addTrade(<a href="/arguments/string/">string</a> career, <a href="/arguments/integer/">integer</a> level, <a href="/arguments/stack/">stack</a> inputA, <a href="/arguments/stack/">stack</a> inputB, <a href="/arguments/stack/">stack</a> output)</pre>
 
 Creates a new villager trade assigned to the specific career and level.
 
@@ -121,7 +121,7 @@ Can trade 1 or 2 items for any output.
 
 ## addTradeEnchant
 
-**tweak.trade.addTradeEnchant([string](/arguments/string/) career, [integer](/arguments/integer/) level, [stack](/arguments/stack/) input, [stack](/arguments/stack/) output, [integer](/arguments/integer/) minPower, [integer](/arguments/integer/) maxPower, [boolean](/arguments/integer/) allowTreasure)**   
+<pre>tweak.trade.addTradeEnchant(<a href="/arguments/string/">string</a> career, <a href="/arguments/integer/">integer</a> level, <a href="/arguments/stack/">stack</a> input, <a href="/arguments/stack/">stack</a> output, <a href="/arguments/integer/">integer</a> minPower, <a href="/arguments/integer/">integer</a> maxPower, <a href="/arguments/boolean/">boolean</a> allowTreasure)</pre>
 
 Creates a new villager trade assigned to the specific career and level.
 
@@ -142,8 +142,8 @@ Trades an input for an output that is randomly enchanted using the specified min
 
 ## addTradeMap
 
-**tweak.trade.addTradeMap([string](/arguments/string/) career, [integer](/arguments/integer/) level, [stack](/arguments/stack/) input, [string](/arguments/string/) mapName)**   
-**tweak.trade.addTradeMap([string](/arguments/string/) career, [integer](/arguments/integer/) level, [stack](/arguments/stack/) inputA, [stack](/arguments/stack/) inputB, [string](/arguments/string/) mapName)**  
+<pre>tweak.trade.addTradeMap(<a href="/arguments/string/">string</a> career, <a href="/arguments/integer/">integer</a> level, <a href="/arguments/stack/">stack</a> input, <a href="/arguments/string/">string</a> mapName)</pre>
+<pre>tweak.trade.addTradeMap(<a href="/arguments/string/">string</a> career, <a href="/arguments/integer/">integer</a> level, <a href="/arguments/stack/">stack</a> inputA, <a href="/arguments/stack/">stack</a> inputB, <a href="/arguments/string/">string</a> mapName)</pre>
 
 Creates a new villager trade assigned to the specific career and level.
 
