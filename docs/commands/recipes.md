@@ -9,7 +9,7 @@ Provides information related to crafting table recipes.
 
 <pre>/tweaked recipes</pre>
 
-Prints a list of all [recipes](/arguments/recipe/) associated to the currently held item to the dump file.
+Dumps a list of all [recipes](/arguments/recipe/) associated to the currently held item to the dump file.
 
 !!! example
 	```python

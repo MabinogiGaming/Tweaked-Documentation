@@ -39,11 +39,13 @@ pages:
     - Commands:
       - dict: 'commands/dict.md'
       - hand: 'commands/hand.md'
+      - inventory: 'commands/inventory.md'
       - lang: 'commands/lang.md'
       - loot: 'commands/loot.md'
       - recipes: 'commands/recipes.md'
       - seeds: 'commands/seeds.md'
       - trade: 'commands/trade.md'
+      - wiki: 'commands/wiki.md'
     - Glossary:
       - Enchantments: 'glossary/enchantments.md'
       - Loot Tables: 'glossary/loottables.md'
