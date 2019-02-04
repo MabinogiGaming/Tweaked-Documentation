@@ -20,6 +20,7 @@ pages:
         - ie.blastfurnace: 'actions/ie/ie_blastfurnace.md'
         - ie.cokeoven: 'actions/ie/ie_cokeoven.md'
         - ie.crusher: 'actions/ie/ie_crusher.md'
+        - ie.excavator: 'actions/ie/ie_excavator.md'
       - Just Enough Items:
         - jei: 'actions/jei/jei.md'
     - Arguments:
@@ -39,6 +40,7 @@ pages:
     - Commands:
       - dict: 'commands/dict.md'
       - hand: 'commands/hand.md'
+      - ie: 'commands/ie.md'
       - inventory: 'commands/inventory.md'
       - lang: 'commands/lang.md'
       - loot: 'commands/loot.md'
@@ -77,4 +79,4 @@ extra:
   logo: 'img/favicon.ico'
   history_buttons: false
   article_nav_top: false
-  version: '0.3.9'
+  version: '0.4.1'
