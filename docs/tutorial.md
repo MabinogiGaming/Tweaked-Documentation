@@ -37,6 +37,8 @@ And now we can add the replacement recipe, add the following code :
 tweak.recipes.shaped("bonus_torch", <minecraft:torch:0:16>, [[<minecraft:coal>][<stickWood>]]);
 ```
 
+<img src="/img/crafting.png/">
+
 ![](/img/crafting.png/)
 
 <br>
