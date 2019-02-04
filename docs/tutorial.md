@@ -37,9 +37,7 @@ And now we can add the replacement recipe, add the following code :
 tweak.recipes.shaped("bonus_torch", <minecraft:torch:0:16>, [[<minecraft:coal>][<stickWood>]]);
 ```
 
-<img src="/img/crafting.png/">
-
-![](/img/crafting.png/)
+![](/img/crafting.png)
 
 <br>
 
@@ -55,7 +53,7 @@ Add the following code :
 tweak.furnace.add(<minecraft:diamond>, <minecraft:bedrock>, 4.0);
 ```
 
-![](/img/furnace.png/)
+![](/img/furnace.png)
 
 <br>
 
@@ -69,4 +67,4 @@ Add the following code :
 tweak.lang.set(<minecraft:bedrock>, "Seared Diamond");
 ```
 
-![](/img/rename.png/)
+![](/img/rename.png)
